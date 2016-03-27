@@ -1,0 +1,16 @@
+#! /bin/sh
+
+echo "n=10000, increasing m"
+n=5000
+echo "n  m  maxdInit  fpInit  fpLoop  extend  total  ecTotal"
+for m in 5500 7500 15000 30000 60000; do
+	./evalEdgeColor $n $m
+done
+
+echo "increasing n, avgdeg=3"
+ad=3
+echo "n  m  maxdInit  fpInit  fpLoop  extend  total  ecTotal"
+for n in 2000 4000 8000 16000 32000; do
+	m=$((ad*n))
+	./evalEdgeColor $n $m
+done

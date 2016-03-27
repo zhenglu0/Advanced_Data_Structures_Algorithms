@@ -1,0 +1,10 @@
+#! /bin/sh
+
+n=4000
+density=64
+echo "increasing d, n=4000 density=64"
+for d in 2 4 8 16 64 ; do
+	m=$((density*n))
+	./evalPrim $n $m $d
+done
+

@@ -1,0 +1,12 @@
+{
+[a: f h j]
+[b: g h i]
+[c: f g h j]
+[d: f]
+[e: f h i j]
+[f: a c d e]
+[g: b c]
+[h: a b c e]
+[i: b e]
+[j: a c e]
+}

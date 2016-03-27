@@ -1,0 +1,13 @@
+#! /bin/sh
+
+echo "increasing k2, k1=16"
+k1=16
+for k2 in 4 8 16 32 64; do
+	./evalHard $k1 $k2
+done
+
+echo "increasing k1, k2=k1"
+for k1 in 2 4 8 16 32 ; do
+	k2=$k1
+	./evalHard $k1 $k2
+done
