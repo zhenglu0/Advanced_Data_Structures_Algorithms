@@ -1,4 +1,4 @@
-## Advanced_Data_Structures_Algorithms
+## Advanced Data Structures Algorithms
 
 For more information, feel free to look at the reports below:
 
